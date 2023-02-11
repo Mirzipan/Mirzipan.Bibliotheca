@@ -1,6 +1,6 @@
 {
-  "name": "net.mirzipan.utils",
-  "displayName": "Mirzipan Utils",
+  "name": "net.mirzipan.bibliotheca",
+  "displayName": "Mirzipan Bibliotheca",
   "version": "1.0",
   "unity": "2021.3",
   "description": "Various utilities for Unity projects",
