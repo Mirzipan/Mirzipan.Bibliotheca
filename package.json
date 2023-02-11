@@ -8,14 +8,15 @@
 	 "name": "Mirzipan"
   },
   "keywords": [ 
-	 "package",
-	 "unity",
-   "mirzipan",
-   "utils",
-   "collection",
-   "singleton",
-   "extension"
-  ],
+	"package",
+	"unity",
+    "mirzipan",
+    "utils",
+    "collection",
+    "singleton",
+    "extension",
+    "disposable"
+  ], 
   "dependencies": { 
   }
 }

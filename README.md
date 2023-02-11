@@ -4,7 +4,12 @@ A collection of basic utilities for Unity. As an added value, now, when someone 
 
 ## General Utilities
 
-TODO
+### Disposables
+
+Slightly modified copies of official `System.Reactive.Disposables`, since they are not available in Unity.
+The namespace is chosen not to clash with the official one, in order to avoid clashes if and when the official library becomes accessible in Unity.
+
+For documentation, see [Microsoft Documentation](https://learn.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229090(v=vs.103))
 
 ## Unity Utilities
 

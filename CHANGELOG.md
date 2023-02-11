@@ -4,3 +4,4 @@
 
 ### Added
 - Singleton MonoBehaviour with auto-resolve
+- Copy of some System.Reactive.Disposables (Anonymous, Boolean, Cancellation, Composite)
