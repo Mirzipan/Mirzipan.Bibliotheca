@@ -1,0 +1,21 @@
+{
+  "name": "net.mirzipan.utils",
+  "displayName": "Mirzipan Utils",
+  "version": "1.0",
+  "unity": "2021.3",
+  "description": "Various utilities for Unity projects",
+  "author": {
+	 "name": "Mirzipan"
+  },
+  "keywords": [ 
+	 "package",
+	 "unity",
+   "mirzipan",
+   "utils",
+   "collection",
+   "singleton",
+   "extension"
+  ],
+  "dependencies": { 
+  }
+}
