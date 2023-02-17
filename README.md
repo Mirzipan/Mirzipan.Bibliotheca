@@ -13,6 +13,10 @@ For documentation, see [Microsoft Documentation](https://learn.microsoft.com/en-
 
 ## Unity Utilities
 
+### UnityEvent Subscriptions
+
+Subscribe to all types of UnityEvent, and unsubscribe simply by disposing of the `IDisposable` that `Subscribe` returns.
+
 ### Singleton
 
 A `MonoBehaviour` that will ensure it does exist and that it is the only one of its kind. While overwhelming usage of singletons is advised against, they can be quite enjoyable in moderation.
