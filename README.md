@@ -1,3 +1,5 @@
+[![openupm](https://img.shields.io/npm/v/net.mirzipan.bibliotheca?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/net.mirzipan.bibliotheca/) ![GitHub](https://img.shields.io/github/license/Mirzipan/Mirzipan.Bibliotheca)
+
 # Mirzipan.Bibliotheca
 
 A collection of basic utilities for Unity. As an added value, now, when someone would ask you "Donde esta la biblioteca?", you can just point them here.
