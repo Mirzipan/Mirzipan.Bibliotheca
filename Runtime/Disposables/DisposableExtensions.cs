@@ -10,7 +10,7 @@ namespace Mirzipan.Bibliotheca.Disposables
         /// <param name="this"></param>
         /// <param name="container">Object with disposer</param>
         /// <returns></returns>
-        public static IDisposable DisposeWith(this IDisposable @this, IHaveDisposer container)
+        public static IDisposable DisposeWith(this IDisposable @this, IDisposerContainer container)
         {
             container.Disposer.Add(@this);
             return @this;

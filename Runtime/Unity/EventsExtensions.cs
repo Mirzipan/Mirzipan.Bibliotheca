@@ -7,7 +7,7 @@ namespace Mirzipan.Bibliotheca.Unity
     public static class EventsExtensions
     {
         public static IDisposable Subscribe(
-            this UnityEvent @this, 
+            this UnityEvent @this,
             UnityAction action)
         {
             @this.AddListener(action);
@@ -15,7 +15,7 @@ namespace Mirzipan.Bibliotheca.Unity
         }
 
         public static IDisposable Subscribe<T0>(
-            this UnityEvent<T0> @this, 
+            this UnityEvent<T0> @this,
             UnityAction<T0> action)
         {
             @this.AddListener(action);
@@ -23,7 +23,7 @@ namespace Mirzipan.Bibliotheca.Unity
         }
 
         public static IDisposable Subscribe<T0, T1>(
-            this UnityEvent<T0, T1> @this, 
+            this UnityEvent<T0, T1> @this,
             UnityAction<T0, T1> action)
         {
             @this.AddListener(action);
@@ -31,7 +31,7 @@ namespace Mirzipan.Bibliotheca.Unity
         }
 
         public static IDisposable Subscribe<T0, T1, T2>(
-            this UnityEvent<T0, T1, T2> @this, 
+            this UnityEvent<T0, T1, T2> @this,
             UnityAction<T0, T1, T2> action)
         {
             @this.AddListener(action);
