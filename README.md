@@ -13,6 +13,10 @@ The namespace is chosen not to clash with the official one, in order to avoid cl
 
 For documentation, see [Microsoft Documentation](https://learn.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229090(v=vs.103))
 
+### IDisposerContainer
+
+Interface that includes a `CompositeDisposable` property.
+
 ## Unity Utilities
 
 ### UnityEvent Subscriptions
