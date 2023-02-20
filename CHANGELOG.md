@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3] - 2023-02-20
+
+### Added
+- IDisposerContainer interface
+- IDisposable extension
+
 ## [1.0.2] - 2023-02-17
 
 ### Added
