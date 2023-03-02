@@ -1,7 +1,9 @@
 {
     "name": "Mirzipan.Bibliotheca",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "Mirzipan.Extensions"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
