@@ -6,6 +6,23 @@ A collection of basic utilities for Unity. As an added value, now, when someone 
 
 ## General Utilities
 
+### BitMask
+
+Multiple variants of a BitMask, namely 8-bit, 16-bit, and 32-bit versions.
+Usable for most of your bit masking and flagging needs.
+
+### Collection Dictionaries
+
+If you are tired of always having to manage collections when using a dictionary with collections as values, then this might be for you.
+There are multiple variants, all of which use some form of pooling for the collections.
+
+Available variants:
+* **HashSetDictionary** - dictionary with HashSet values, accepts custom value comparers 
+* **ListDictionary** - dictionary with List values 
+* **MultiDictionary** - dictionary with Dictionary values, accepts custom inner key comparers
+
+If none of the variants cover your needs, you may always just inherit from `CollectionDictionary` and make it use your custom `ICollection<T>`.
+
 ### Disposables
 
 Slightly modified copies of official `System.Reactive.Disposables`, since they are not available in Unity.
@@ -19,10 +36,20 @@ Interface that includes a `CompositeDisposable` property.
 
 ## Unity Utilities
 
-### UnityEvent Subscriptions
+### InputUtils
 
-Subscribe to all types of UnityEvent, and unsubscribe simply by disposing of the `IDisposable` that `Subscribe` returns.
+Simple checks for state of modifier keys (Alt, Ctrl, Shift, Meta).
+
+The states:
+* **Up** - is not pressed
+* **Pressed** - key was pressed right now
+* **Down** - key was pressed and is still being pressed
+* **Released** - key was released right now
 
 ### Singleton
 
 A `MonoBehaviour` that will ensure it does exist and that it is the only one of its kind. While overwhelming usage of singletons is advised against, they can be quite enjoyable in moderation.
+
+### UnityEvent Subscriptions
+
+Subscribe to all types of UnityEvent, and unsubscribe simply by disposing of the `IDisposable` that `Subscribe` returns.

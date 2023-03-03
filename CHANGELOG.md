@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0] - 2023-03-03
+
+### Added
+- CollectionDictionary and its variants (ListDictionary, HashSetDictionary, MultiDictionary)
+- BitMasks (8-, 16-, and 32-bit variants)
+- InputUtils for more convenient checking of modifier key status
+
 ## [1.0.3] - 2023-02-20
 
 ### Added
