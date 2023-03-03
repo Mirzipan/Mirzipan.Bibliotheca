@@ -4,7 +4,7 @@ namespace Mirzipan.Bibliotheca.Masks
 {
     public struct BitMask8 : IComparable<BitMask8>, IEquatable<BitMask8>
     {
-        public const int Count = sizeof(byte);
+        public const int Count = 8;
 
         public static readonly BitMask8 Empty = new BitMask8(false);
         public static readonly BitMask8 Full = new BitMask8(true);
