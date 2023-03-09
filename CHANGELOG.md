@@ -1,9 +1,14 @@
 # Changelog
 
+## [1.2.1] - 2023-03-09
+
+### Fixed
+- QuadByte, OctoByte, and CompositeId drawers overriding field names
+
 ## [1.2.0] - 2023-03-09
 
 ### Added
-- QuadByte, OctoByte, and CompositeId as simple identifiers that combine the performance of an integer type with the convenience of a string
+- QuadByte, OctoByte, and CompositeId as simple identifiers
 
 ## [1.1.0] - 2023-03-03
 
