@@ -14,7 +14,7 @@ namespace Mirzipan.Bibliotheca.Editor
             var q1 = composite.Primary;
             var q2 = composite.Secondary;
 
-            var rect = EditorGUI.PrefixLabel(position, new GUIContent("Id"));
+            var rect = EditorGUI.PrefixLabel(position, label);
             float halfW = rect.width * .5f;
             rect.width = halfW;
             q1 = new QuadByte(EditorGUI.TextField(rect, q1.ToString()));

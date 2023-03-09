@@ -11,7 +11,7 @@ namespace Mirzipan.Bibliotheca.Editor
         {
             SerializedProperty value = property.FindPropertyRelative("Value");
             var text = new QuadByte((uint)value.intValue).ToString();
-            value.intValue = (int)(uint)new QuadByte(EditorGUI.TextField(position, new GUIContent("4 Bytes"), text));
+            value.intValue = (int)(uint)new QuadByte(EditorGUI.TextField(position, label, text));
         }
     }
 }

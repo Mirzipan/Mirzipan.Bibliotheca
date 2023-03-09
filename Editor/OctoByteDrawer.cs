@@ -11,7 +11,7 @@ namespace Mirzipan.Bibliotheca.Editor
         {
             SerializedProperty value = property.FindPropertyRelative("Value");
             var text = new OctoByte((ulong)value.longValue).ToString();
-            value.longValue = (long)(ulong)new OctoByte(EditorGUI.TextField(position, new GUIContent("8 Bytes"), text));
+            value.longValue = (long)(ulong)new OctoByte(EditorGUI.TextField(position, label, text));
         }
     }
 }
