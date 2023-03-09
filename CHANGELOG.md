@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.0] - 2023-03-09
+
+### Added
+- QuadByte, OctoByte, and CompositeId as simple identifiers that combine the performance of an integer type with the convenience of a string
+
 ## [1.1.0] - 2023-03-03
 
 ### Added

@@ -34,6 +34,15 @@ For documentation, see [Microsoft Documentation](https://learn.microsoft.com/en-
 
 Interface that includes a `CompositeDisposable` property.
 
+### Identifiers
+
+Simple identifiers that combine the performance of an integer type with the convenience of a string.
+
+Available variants:
+* **QuadByte** - an identifier backed by `uint`
+* **OctoByte** - an identifier backed by `ulong`
+* **CompositeId** - an identifier backed by `OctoByte` with a primary and a secondary `QuadByte`
+
 ## Unity Utilities
 
 ### InputUtils
