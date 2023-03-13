@@ -28,7 +28,7 @@ If none of the variants cover your needs, you may always just inherit from `Coll
 Slightly modified copies of official `System.Reactive.Disposables`, since they are not available in Unity.
 The namespace is chosen not to clash with the official one, in order to avoid clashes if and when the official library becomes accessible in Unity.
 
-For documentation, see [Microsoft Documentation](https://learn.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229090(v=vs.103))
+For more info, see [Microsoft Documentation](https://learn.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229090(v=vs.103))
 
 ### IDisposerContainer
 
@@ -44,6 +44,12 @@ Available variants:
 * **CompositeId** - an identifier backed by `OctoByte` with a primary and a secondary `QuadByte`
 
 ## Unity Utilities
+
+### Colors
+
+Collection of 141 pre-defined commonly used colors with a variant for `Color` and `Color32`.
+
+For more info, see [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=windowsdesktop-7.0)
 
 ### InputUtils
 

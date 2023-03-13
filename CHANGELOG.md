@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.2] - 2023-03-13
+
+### Added
+- Colors32 with the same colors as Colors has
+
 ## [1.2.1] - 2023-03-09
 
 ### Fixed
