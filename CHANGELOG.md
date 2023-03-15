@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0] - 2023-03-15
+
+### Changed
+- CompositeId now uses ulong directly as its serialized value, instead of OctoByte
+
+### Removed
+- Removed Colors and Colors32 (moved to Mirzipan.Extensions)
+
 ## [1.2.2] - 2023-03-13
 
 ### Added

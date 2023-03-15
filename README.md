@@ -45,12 +45,6 @@ Available variants:
 
 ## Unity Utilities
 
-### Colors
-
-Collection of 141 pre-defined commonly used colors with a variant for `Color` and `Color32`.
-
-For more info, see [Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=windowsdesktop-7.0)
-
 ### InputUtils
 
 Simple checks for state of modifier keys (Alt, Ctrl, Shift, Meta).
