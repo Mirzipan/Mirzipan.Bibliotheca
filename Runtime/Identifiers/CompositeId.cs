@@ -8,7 +8,10 @@ namespace Mirzipan.Bibliotheca.Identifiers
     public struct CompositeId: IEquatable<CompositeId>, IComparable<CompositeId>
     {
         [FieldOffset(0)]   
-        public OctoByte Value;
+        public ulong Value;
+        [NonSerialized]
+        [FieldOffset(0)]   
+        public OctoByte Combined;
         [NonSerialized]
         [FieldOffset(0)]   
         public QuadByte Primary;
@@ -16,14 +19,19 @@ namespace Mirzipan.Bibliotheca.Identifiers
         [FieldOffset(4)]   
         public QuadByte Secondary;
 
-        public bool IsEmpty => Value.IsEmpty;
+        public bool IsEmpty => Value == 0u;
         public string String => ToString();
 
         #region Lifecycle
 
-        public CompositeId(OctoByte value) : this()
+        public CompositeId(ulong value) : this()
         {
             Value = value;
+        }
+
+        public CompositeId(OctoByte value) : this()
+        {
+            Combined = value;
         }
 
         public CompositeId(QuadByte primary, QuadByte secondary) : this()

@@ -156,6 +156,11 @@ namespace Mirzipan.Bibliotheca.Identifiers
             return new OctoByte(value);
         }
 
+        public static implicit operator OctoByte(ulong value)
+        {
+            return new OctoByte(value);
+        }
+
         public static implicit operator OctoByte(string value)
         {
             return new OctoByte(value);
