@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1] - 2023-03-16
+
+### Changed
+- CompositeId drawer now shows prefixes in front of its parts
+
+### Fixed
+- CompositeId drawer now works again
+
 ## [1.3.0] - 2023-03-15
 
 ### Changed
