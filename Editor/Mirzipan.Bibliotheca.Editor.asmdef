@@ -1,5 +1,5 @@
 {
-    "name": "net.mirzipan.bibliotheca.editor",
+    "name": "Mirzipan.Bibliotheca.Editor",
     "rootNamespace": "",
     "references": [
         "Mirzipan.Bibliotheca"
