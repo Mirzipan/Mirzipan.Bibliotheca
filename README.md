@@ -30,9 +30,36 @@ The namespace is chosen not to clash with the official one, in order to avoid cl
 
 For more info, see [Microsoft Documentation](https://learn.microsoft.com/en-us/previous-versions/dotnet/reactive-extensions/hh229090(v=vs.103))
 
-### IDisposerContainer
+#### IDisposerContainer
 
 Interface that includes a `CompositeDisposable` property.
+There is also an extension method `DisposeWith` for easier disposable registration.
+
+```csharp
+    public class Container : IDisposerContainer
+    {
+        private class Disposable : IDisposable
+        {
+            public void Dispose()
+            {
+                // TODO: cleanup
+            }
+        }
+        
+        private CompositeDisposable _disposer;
+
+        CompositeDisposable IDisposerContainer.Disposer
+        {
+            get => _disposer ??= new CompositeDisposable();
+            set => _disposer = value;
+        }
+
+        public IDisposable CreateDisposable()
+        {
+            return new Disposable().DisposeWith(this);
+        }
+    }
+```
 
 ### Identifiers
 
@@ -42,6 +69,26 @@ Available variants:
 * **QuadByte** - an identifier backed by `uint`
 * **OctoByte** - an identifier backed by `ulong`
 * **CompositeId** - an identifier backed by `OctoByte` with a primary and a secondary `QuadByte`
+
+### Modules
+
+Interfaces and abstract classes to make creating modules are little simpler and more consistent.
+Modules need to implement `IModule` and module containers need to implement `IModuleContainer`.
+Ideally, you would want to make your modules inherit from either `AModule` or `AModuleBehaviour`, depending on whether you are looking to implement a pure C# class or a `MonoBehaviour`.
+
+```csharp
+    public class SomeContainer : IModuleContainer
+    {
+        private readonly Dictionary<Type, SomeModule> _modules = new();
+
+        public IModule Get(Type moduleType) => _modules.TryGetValue(moduleType, out var module) ? module : null;
+    }
+
+    public abstract class SomeModule : AModule<SomeContainer>
+    {
+        
+    }
+```
 
 ## Unity Utilities
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.2] - 2023-04-10
+
+### Added
+- IModule, IModuleContainer and basic implementations thereof
+
 ## [1.3.1] - 2023-03-16
 
 ### Changed
