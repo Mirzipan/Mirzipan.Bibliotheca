@@ -1,6 +1,8 @@
-﻿namespace Mirzipan.Bibliotheca.Modular
+﻿using UnityEngine;
+
+namespace Mirzipan.Bibliotheca.Modular
 {
-    public abstract class Module: IModule
+    public abstract class AModuleBehaviour : MonoBehaviour, IModule
     {
         protected abstract IModuleContainer Container { get; }
 
