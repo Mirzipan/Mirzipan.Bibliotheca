@@ -8,11 +8,9 @@ namespace Mirzipan.Bibliotheca.Editor
     public class CompositeIdDrawer : PropertyDrawer
     {
         private const float SubLabelSpacing = 4;
-        private const float BottomSpacing = 2;
         
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            position.height -= BottomSpacing;
             label = EditorGUI.BeginProperty(position, label, property);
             position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
 
